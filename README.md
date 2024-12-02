@@ -67,11 +67,11 @@ Response body:
 ```
 
 _### **Create Booking **_
-Protocol : https
-Server Name or IP: restful-booker.herokuapp.com
-HTTP Request method: POST
-Path: /booking
-Request body:
+Protocol : https                                                                                                                                                                          
+Server Name or IP: restful-booker.herokuapp.com                                                                                                                                           
+HTTP Request method: POST                                                                                                                                                                 
+Path: /booking                                                                                                                                                                            
+Request body:                                                                                                                                                                             
 ``` console
 {
     "firstname" : "Jim",
@@ -91,36 +91,74 @@ Response body:
 ```
 
 _### **Get Booking **_
-Protocol : https
-Server Name or IP: restful-booker.herokuapp.com
-HTTP Request method:
-Path:
-Request body:
-Response body:
+Protocol : https                                                                                                                                                                          
+Server Name or IP: restful-booker.herokuapp.com                                                                                                                                           
+HTTP Request method: GET                                                                                                                                                                  
+Path: booking/${booking_ID}                                                                                                                                                               
+Request body: ``` none ```                                                                                                                                                                
+Response body:                                                                                                                                                                            
+``` console
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+```
 
 _### **Update Booking **_
-Protocol : https
-Server Name or IP: restful-booker.herokuapp.com
-HTTP Request method:
-Path:
-Request body:
+Protocol : https                                                                                                                                                                          
+Server Name or IP: restful-booker.herokuapp.com                                                                                                                                           
+HTTP Request method: PUT                                                                                                                                                                  
+Path: booking/${booking_ID}                                                                                                                                                               
+Request body:                                                                                                                                                                             
+``` console
+{
+    "firstname" : "Nazrul",
+    "lastname" : "Islam",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+}
+```
 Response body:
-
+``` console
+{"firstname":"Nazrul","lastname":"Islam","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+```
 _### **Update Booking Partially**_
-Protocol : https
-Server Name or IP: restful-booker.herokuapp.com
-HTTP Request method:
-Path:
-Request body:
+Protocol : https                                                                                                                                                                          
+Server Name or IP: restful-booker.herokuapp.com                                                                                                                                           
+HTTP Request method: PATCH                                                                                                                                                                
+Path: booking/${booking_ID}                                                                                                                                                               
+Request body:                                                                                                                                                                             
+``` console
+{
+  "firstname" : "Nafsi",
+  "totalprice" : 500
+}
+```
 Response body:
+``` console
+{"firstname":"Nafsi","lastname":"Islam","totalprice":500,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+```
 
 _### **Delete Booking **_
-Protocol : https
-Server Name or IP: restful-booker.herokuapp.com
-HTTP Request method:
-Path:
-Request body:
-Response body:
+Protocol : https                                                                                                                                                                          
+Server Name or IP: restful-booker.herokuapp.com                                                                                                                                           
+HTTP Request method: DELETE                                                                                                                                                               
+Path: booking/${booking_ID}                                                                                                                                                               
+Request body: ``` none```                                                                                                                                                                 
+Response body: ``` Created```                                                                                                                                                             
+
+### Run Command:
+  Run Command for Report:
+``` console
+ jmeter -n -t Restful_Booker.jmx -l reports\Restful_Booker.jtl
+```
+``` console
+ jmeter -g reports\Restful_Booker.jtl -o reports\Restful_Booker.html
+```
+### Reports
+![image](https://github.com/user-attachments/assets/658a248c-d908-4598-8a55-70f66e0be330)
 
 
 
