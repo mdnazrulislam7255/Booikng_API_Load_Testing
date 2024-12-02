@@ -42,19 +42,19 @@ The base URL is: https://restful-booker.herokuapp.com
 
 # End points
 _### **Health Check**_
-Protocol : https
-Server Name or IP: restful-booker.herokuapp.com
-HTTP Request method: GET
-Path: /ping
-Request body: ```none```
-Response body: ```Created```
+Protocol : https                                                                                                                                                                          
+Server Name or IP: restful-booker.herokuapp.com                                                                                                                                           
+HTTP Request method: GET                                                                                                                                                                  
+Path: /ping                                                                                                                                                                               
+Request body: ```none```                                                                                                                                                                  
+Response body: ```Created```                                                                                                                                                             
 
 _### **Create Booking Token**_
-Protocol : https
-Server Name or IP: restful-booker.herokuapp.com
-HTTP Request method: POST
-Path: /auth
-Request body:
+Protocol : https                                                                                                                                                                          
+Server Name or IP: restful-booker.herokuapp.com                                                                                                                                           
+HTTP Request method: POST                                                                                                                                                                 
+Path: /auth                                                                                                                                                                               
+Request body:                                                                                                                                                                             
 ``` console
 {
     "username" : "admin",
