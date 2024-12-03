@@ -176,7 +176,7 @@ Response body:
 {"firstname":"Nafsi","lastname":"Islam","totalprice":500,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
 ```
 
-_### **Delete Booking **_                                                                                                                                                                 
+### _Delete Booking_                                                                                                                                                                 
 Protocol : _https_                                                                                                                                                                        
 Server Name or IP: _restful-booker.herokuapp.com_                                                                                                                                         
 HTTP Request method: _DELETE_                                                                                                                                                             
