@@ -15,7 +15,7 @@ _**This test suite is designed to:**_
 3. _**Setup and Execution**_
    - Step 1: Clone the Repository:
      ``` clone
-     git clone https://github.com/mdnazrulislam7255/Booikng_API_Load_Testing.git
+       https://github.com/mdnazrulislam7255/Booking_API_Load_Testing.git
      ```
    - Step 2: Configure JMeter
      Open the Restful_Booker.jmx file in Apache JMeter.
